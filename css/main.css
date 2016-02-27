@@ -1,0 +1,48 @@
+/* ===========
+   Base styles
+   =========== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+body, button, input, select, textarea {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* =============
+   Layout styles
+   ============= */
+main {
+  margin-top: 2em;
+}
+
+.container {
+  max-width: 55em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 1em;
+}
+
+/* =================
+   Section-specific styles
+   ================= */
+
+
+/* =================
+   Responsive styles
+   ================= */
