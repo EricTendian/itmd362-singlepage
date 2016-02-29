@@ -10,11 +10,20 @@ body, button, input, select, textarea {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+}
+
 /* =============
    Layout styles
    ============= */
-main {
-  margin-top: 2em;
+
+section {
+  width: 90%;
+  max-width: 65em;
+  margin: 0 auto;
 }
 
 .container {
@@ -42,7 +51,63 @@ main {
    Section-specific styles
    ================= */
 
+header {
+  background-image: url(http://i.imgur.com/GiD0ddL.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+  padding-top: 20vh;
+  font-size: 5em;
+}
+
+ul.tiles {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.tiles li img {
+  object-fit: cover; /* need a polyfill for this */
+  width: 100%;
+  height: 12em;
+}
+
+ul.tiles h3,
+ul.tiles h4 {
+    margin: 0;
+}
+
+ul.tiles li p {
+    font-size: 0.8em;
+}
 
 /* =================
    Responsive styles
    ================= */
+
+@media all and (min-width: 36em) {
+  ul.tiles > li {
+    flex-grow: 1;
+    width: 49%;
+    margin-right: 1%;
+  }
+}
+
+@media all and (min-width: 54em) {
+  ul.tiles > li {
+    flex-grow: 1;
+    width: 32%;
+    margin-right: 1%;
+  }
+}
