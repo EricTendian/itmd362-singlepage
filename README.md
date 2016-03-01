@@ -1,4 +1,4 @@
-# itmd362-onboarding
+# itmd362-singlepage
 
 Project Two: Media-Rich Single-Page Site for ITMD362, Spring 2016. [Project goals and deliverables](http://courses.karlstolley.com/hci/#project-one)
 
