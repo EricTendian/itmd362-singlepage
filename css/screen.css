@@ -315,6 +315,11 @@ footer #download a#download-btn:active {
   background: #00d;
 }
 
+footer #download a#download-btn img {
+  width: 1em;
+  margin-bottom: -0.2em;
+}
+
 footer p {
   padding: 0 1em;
 }
