@@ -57,12 +57,18 @@ ul.tiles {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 ul.tiles li img {
-  object-fit: cover; /* need a polyfill for this */
+  -o-object-fit: cover;
+     object-fit: cover; /* need a polyfill for this */
   width: 100%;
   height: 12em;
 }
@@ -110,9 +116,9 @@ ul.tab-nav li a {
   color: #222;
   padding: 1em;
   text-decoration: none;
-  border-top: 1px solid #bbb;
-  border-left: 1px solid #bbb;
-  border-right: 1px solid #bbb;
+  border-top: 0.063em solid #bbb;
+  border-left: 0.063em solid #bbb;
+  border-right: 0.063em solid #bbb;
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
 }
@@ -130,7 +136,7 @@ html.js .tab-container .tab:not(.active) {
 
 .tab-container {
   background: #f8f8f8;
-  border: 3px solid #222;
+  border: 0.188em solid #222;
   border-radius: 0.5em;
   border-top-left-radius: 0;
   padding: 0 1em 1em;
@@ -164,7 +170,7 @@ header h1 {
 header iframe {
   display: block;
   margin: 1em auto;
-  max-width: 560px;
+  max-width: 35em;
   width: 100%;
   height: 14em;
   border: none;
@@ -180,16 +186,17 @@ header a.btn {
   font-weight: bold;
   width: 8em;
   text-align: center;
-  box-shadow: 2px 2px 6px #222;
+  box-shadow: 0.125em 0.125em 0.375em #222;
   margin-top: 1em;
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
+  -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
 
 header a.btn:hover,
 header a.btn:active {
-  box-shadow: 1px 1px 4px #222;
+  box-shadow: 0.063em 0.063em 0.250em #222;
 }
 
 header p {
@@ -232,7 +239,8 @@ header .scroll-down {
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: blur(2px);
+  -webkit-filter: blur(0.125em);
+          filter: blur(0.125em);
 }
 .blur-bg {
   position: relative;
@@ -267,7 +275,7 @@ footer #download > div {
   border-radius: 1em;
   margin: 0 auto;
   padding: 1em;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+  box-shadow: 0.313em 0.313em 0.625em rgba(0,0,0,0.7);
   color: #fff;
 }
 
@@ -284,6 +292,7 @@ footer #download > div a {
   margin: 0 auto;
   background: #eee;
   padding: 0.5em;
+  -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 
@@ -319,7 +328,10 @@ footer p {
     height: 18em;
   }
   ul.tiles > li {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 30%;
     margin-right: 1%;
     padding: 0 5%;

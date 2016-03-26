@@ -9,6 +9,16 @@ simulator that can run on almost any hardware, new or old. However, [its website
 My goal for the project is to create a marketing site for YSFlight that will tell the story of the game and what
 a player can accomplish in it, especially how fun it is for being so simple. I will use lots of media to help do this.
 
+## Building CSS
+
+First, install postcss-cli and Autoprefixer:
+
+`npm install --global postcss-cli autoprefixer`
+
+After that is installed, you can use postcss to build the CSS. Remember to rebuild after each CSS change!
+
+`postcss --use autoprefixer css/screen.raw.css > css/screen.css`
+
 ## Credits
 
 I used the following resources in this site:
