@@ -1,5 +1,6 @@
 $('html').removeClass('no-js').addClass('js');
 
+// for switching between tabs
 $('ul.tab-nav li a').on('click', function () {
   var grandparent = $(this).parent().parent();
   grandparent.find('li').removeClass('active');
