@@ -148,7 +148,7 @@ html.js .tab-container .tab:not(.active) {
    ================= */
 
 header {
-  background-image: url(../img/background.jpg);
+  background-image: url(https://assets.ysfhq.com/ysflight.org/background.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -258,15 +258,15 @@ header .scroll-down {
 }
 
 .blur-bg#sandbox:before {
-  background-image: url(../img/hovercraft.png);
+  background-image: url(https://assets.ysfhq.com/ysflight.org/hovercraft.png);
 }
 
 .blur-bg#community:before {
-  background-image: url(../img/manyplanes.png);
+  background-image: url(https://assets.ysfhq.com/ysflight.org/manyplanes.png);
 }
 
 footer #download {
-  background-image: url(../img/president.jpg);
+  background-image: url(https://assets.ysfhq.com/ysflight.org/president.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
