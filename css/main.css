@@ -28,6 +28,10 @@ section {
   margin: 0 auto;
 }
 
+main h2 {
+  font-size: 2em;
+}
+
 .container {
   max-width: 55em;
   margin: 0 auto;
@@ -163,6 +167,7 @@ header iframe {
   max-width: 560px;
   width: 100%;
   height: 14em;
+  border: none;
 }
 
 header a.btn {
