@@ -136,7 +136,7 @@ html.js .tab-container .tab:not(.active) {
    ================= */
 
 header {
-  background-image: url(https://i.imgur.com/GiD0ddL.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -244,15 +244,15 @@ header .scroll-down {
 }
 
 .blur-bg#sandbox:before {
-  background-image: url(https://assets.ysfhq.com/wp-content/gallery/screenshots/image172.png);
+  background-image: url(../img/hovercraft.png);
 }
 
 .blur-bg#community:before {
-  background-image: url(https://assets.ysfhq.com/wp-content/gallery/screenshots/image62.png);
+  background-image: url(../img/manyplanes.png);
 }
 
 footer #download {
-  background-image: url(https://assets.ysfhq.com/media/aboutys/president.jpg);
+  background-image: url(../img/president.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
